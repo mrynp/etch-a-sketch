@@ -1,57 +1,86 @@
+body {
+  margin: 0;
+}
+
 #gameBoard {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-  background-color: rgb(221, 0, 0);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: #fb5012;
   border-radius: 25px;
-  padding: 20px;
   width: 900px;
   height: 700px;
   margin: 20px auto;
+  padding: 20px;
   box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2), 0 8px 20px 0 rgba(0, 0, 0, 0.19);
-
 }
 
 h1 {
   color: #FFD700;
   font-family: 'Satisfy', cursive;
   font-size: 40px;
-  margin: 0px;
+  margin: 0;
+}
+
+.screen {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
 }
 
 .board {
-  width: 500px;
-  height: 500px;
+  background-color: white;
+  width: 550px;
+  height: 550px;
   display: grid;
-  box-shadow: 5px 10px 20px 5px rgba(0, 0, 0, 0.2) inset:
-}
+  margin: 0px 40px 0px 40px;
+  /* box-shadow = 0 3px 10px 3px rgba(0, 0, 0, 0.2) inset;
+  border-radius = 10px; */
 
-.footer {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  width: 900px;
-  align-items: center;
-  margin-top: auto;
-  margin-bottom: 20px;
 }
 
 .circle {
+  display: inline;
   background: #ffffff;
-  width: 90px;
-  height: 90px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
+  align-self: self-end;
+  margin-bottom: 20px;
 }
 
-button {
-  background-color: rgb(221, 0, 0);
-  border: none;
+.button {
+  background-color: white;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
   color: rgb(36, 36, 36);
-  padding: 15px 32px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
   font-size: 16px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.size {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.option {
+  display: flex;
+  flex-direction: row;
+  height: 100px;
+  width: 500px;
+  justify-content: space-evenly;
+  align-items: center;
 }
