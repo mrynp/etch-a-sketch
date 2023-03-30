@@ -13,16 +13,18 @@
 </head>
 <body>
 <div id="gameBoard">
-  <h1>Etch A Sketch</h1>
+  <div class="header">
+    <h1>Etch A Sketch</h1>
+    <div class="active"></div>
+  </div>
   <div class="screen">
     <div class="circle" onclick="resetBoard()"></div>
     <div class="center">
       <div class="board"></div>
-      <div class="option">
-        <div class="size">
-          <input type="range" id="size" value="16" min="2" max="100">
+      <div class="footer">
+        <input type="range" id="size"value="16" min="2" max="100" oninput="rangevalue.value=value"/>
+        <output id="rangevalue">16</output>
 
-        </div>
         <div class ="button" id="black" onclick="setColor('black')"></div>
         <div class ="button" id="random" onclick="setColor('random')"></div>
         <div class ="button" id="white" onclick="setColor('white')"></div>
