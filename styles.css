@@ -12,14 +12,14 @@ body {
   border-radius: 25px;
   width: 900px;
   height: 700px;
-  margin: 20px auto;
+  margin: 0 auto;
   padding: 20px;
   box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2), 0 8px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 h1 {
   color: #fdf035;
-  font-family: 'Satisfy', cursive;
+  font-family: "Satisfy", cursive;
   font-size: 40px;
   margin: 0;
 }
@@ -34,7 +34,6 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  
 }
 
 .board {
@@ -94,19 +93,18 @@ h1 {
 }
 
 #random {
-  background: linear-gradient(to bottom right, #e23413, #E3D912, #124EE2 );
+  background: linear-gradient(to bottom right, #e23413, #e3d912, #124ee2);
 }
 
 #white {
   background-color: #ffff;
 }
 
-
 body {
   margin: 2rem;
 }
 
-.footer {
+.bottom {
   display: flex;
   flex-direction: row;
   height: 100px;
@@ -115,12 +113,11 @@ body {
   align-items: center;
 }
 
-
 input,
 output {
   display: flex;
   font-size: 0.8em;
-  font-family: Arial, sans-serif;
+  font-family: Manrope, sans-serif;
 }
 
 output {
@@ -134,7 +131,6 @@ output {
   align-items: center;
   box-shadow: 0 1px 10px 1px rgba(0, 0, 0, 0.2) inset;
 }
-
 
 input[type="range"] {
   -webkit-appearance: none;
@@ -153,7 +149,7 @@ input[type="range"]::-webkit-slider-thumb {
   background: #efe6dd;
   cursor: ew-resize;
   box-shadow: 0 0 2px 0 #555;
-  transition: background .3s ease-in-out;
+  transition: background 0.3s ease-in-out;
 }
 
 input[type="range"]::-moz-range-thumb {
@@ -164,7 +160,7 @@ input[type="range"]::-moz-range-thumb {
   background: #efe6dd;
   cursor: ew-resize;
   box-shadow: 0 0 2px 0 #555;
-  transition: background .3s ease-in-out;
+  transition: background 0.3s ease-in-out;
 }
 
 input[type="range"]::-ms-thumb {
@@ -175,18 +171,18 @@ input[type="range"]::-ms-thumb {
   background: #efe6dd;
   cursor: ew-resize;
   box-shadow: 0 0 2px 0 #555;
-  transition: background .3s ease-in-out;
+  transition: background 0.3s ease-in-out;
 }
 
 /* Input Track */
-input[type=range]::-webkit-slider-runnable-track  {
+input[type="range"]::-webkit-slider-runnable-track {
   -webkit-appearance: none;
   box-shadow: none;
   border: none;
   background: transparent;
 }
 
-input[type=range]::-moz-range-track {
+input[type="range"]::-moz-range-track {
   -webkit-appearance: none;
   box-shadow: none;
   border: none;
@@ -200,7 +196,7 @@ input[type="range"]::-ms-track {
   background: transparent;
 }
 
-.header {
+.top {
   display: flex;
   align-items: center;
 }
@@ -212,4 +208,8 @@ input[type="range"]::-ms-track {
   margin-left: 15px;
   /* margin-bottom: 20px; */
   background-color: #d0420e;
+}
+
+#toBlack {
+  background: linear-gradient(to right, #efe6dd, #3a3335);
 }

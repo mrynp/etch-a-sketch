@@ -9,11 +9,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
     
 </head>
 <body>
+  
 <div id="gameBoard">
-  <div class="header">
+  <div class="top">
     <h1>Etch A Sketch</h1>
     <div class="active"></div>
   </div>
@@ -21,13 +23,16 @@
     <div class="circle" onclick="resetBoard()"></div>
     <div class="center">
       <div class="board"></div>
-      <div class="footer">
+      <div class="bottom">
         <input type="range" id="size"value="16" min="2" max="100" oninput="rangevalue.value=value"/>
         <output id="rangevalue">16</output>
 
         <div class ="button" id="black" onclick="setColor('black')"></div>
         <div class ="button" id="random" onclick="setColor('random')"></div>
         <div class ="button" id="white" onclick="setColor('white')"></div>
+
+        <div class ="button" id="toBlack" onclick="setColor('gray')"></div>
+
       </div>
     </div>
     <div class="circle" onclick="resetBoard()"></div>
@@ -36,6 +41,7 @@
 
 
 </div>
+
     <script src="main.js"></script>
 </body>
 </html>
